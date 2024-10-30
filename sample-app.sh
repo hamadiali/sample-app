@@ -16,8 +16,8 @@ echo "EXPOSE 6060" >> tempdir/Dockerfile
 echo "CMD python /home/myapp/sample_app.py" >> tempdir/Dockerfile
 
 cd tempdir
-docker  build  -t sampleapp .
-docker run  -d -p 6060:6060 --name samplerunning sampleapp
-docker ps -a 
+sudo docker  build  -t sampleapp .
+sudo docker run  -d -p 6060:6060 --name samplerunning sampleapp
+sudo docker ps -a 
 
 
